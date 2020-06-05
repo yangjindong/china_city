@@ -1,9 +1,10 @@
 # rails plugin new china_city --dummy-path=spec/dummy --skip-test-unit --mountable
-if ENV['TRAVIS']
-  source 'https://rubygems.org'
-else
-  source 'https://gems.ruby-china.org'
-end
+# if ENV['TRAVIS']
+#   source 'https://rubygems.org'
+# else
+#   source 'https://gems.ruby-china.org'
+# end
+source 'https://rubygems.org'
 
 # Declare your gem's dependencies in china_city.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -20,5 +21,3 @@ gem 'appraisal'
 gem 'rake', '< 11.0'
 # To use debugger
 # gem 'debugger'
-
-gem 'byebug'
