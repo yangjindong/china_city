@@ -2,7 +2,7 @@
 if ENV['TRAVIS']
   source 'https://rubygems.org'
 else
-  source 'https://ruby.taobao.org'
+  source 'https://gems.ruby-china.org'
 end
 
 # Declare your gem's dependencies in china_city.gemspec.
@@ -17,5 +17,8 @@ gemspec
 
 gem 'jquery-rails' # fixed: ActionView::Template::Error: couldn't find file 'jquery'
 gem 'appraisal'
+gem 'rake', '< 11.0'
 # To use debugger
 # gem 'debugger'
+
+gem 'byebug'
