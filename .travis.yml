@@ -16,3 +16,4 @@ rvm: ruby-2.1.7
 
 gemfile:
   - gemfiles/rails5.gemfile
+  - gemfiles/rails6.gemfile
