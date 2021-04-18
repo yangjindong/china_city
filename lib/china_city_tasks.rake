@@ -24,6 +24,7 @@ namespace :gem do
         end
       end
       provinces << { text:province.name, id: province.code } unless gb_cities.empty?    # 台湾省、香港、澳门没有市
+      # provinces << { text:province.name, id: province.code } #unless gb_cities.empty?    # 显示台湾省、香港、澳门
     end
 
     map_codes = YAML.load_file("db/district_gb2260_taobao.yml")
